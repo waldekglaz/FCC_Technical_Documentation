@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Html Documentation Page</title>
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header>HTML Documentation</header>
+            <div class="link-wrapper">
+                <ul>
+                    <li><a class="nav-link" href="#what_is_HTML?">What is HTML?</a></li>
+                </ul>
+                <ul>
+                    <li><a class="nav-link" href="#Anatomy_of_an_HTML_element">Anatomy of an HTML element</a></li>
+                </ul>
+                <ul>
+                    <li><a class="nav-link" href="#Atributes">Atributes</a></li>
+                </ul>
+                <ul>
+                    <li><a class="nav-link" href="#anatomy_of_an_HTML_document">Anatomy of an HTML document</a></li>
+                </ul>
+                <ul>
+                    <li><a class="nav-link" href="#HTML_comments">HTML comments</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="main-section" id="what_is_HTML?">
+            <header >What is HTML?</header>
+            <p>HTML (Hypertext Markup Language) is not a programming language; it is a markup language used to tell your browser how to structure the web pages you visit. It can be as complicated or as simple as the web developer wishes it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of the content to make it appear or act a certain way. The enclosing tags can make a bit of content into a hyperlink to link to another page on the web, italicize words, and so on.  For example, take the following line of content:</p>
+            <p>My cat is very grumpy</p>
+            <p>If we wanted the line to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph  (<code>&lt;p&gt;</code>) element:</p>
+            <p><code>&lt;p&gt;My cat is very grumpy &lt;&sol;p&gt;</code></p>
+        </section>
+        <section class="main-section" id="Anatomy_of_an_HTML_element">
+            <header >Anatomy of an HTML element</header>
+            <p>The main parts of our element are:</p>
+            <ul>
+                <li><span class="bold">The opening tag:</span> This consists of the name of the element (in this case, p), wrapped in opening and closing <span class="bold">angle brackets</span>. This states where the element begins or starts to take effect — in this case where the start of the paragraph is.</li>
+                <li><span class="bold">The closing tag:</span> This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the end of the paragraph is. Failing to include a closing tag is a common beginner error and can lead to strange results.</li>
+                <li><span class="bold">The content:</span> This is the content of the element, which in this case is just text.</li>
+                <li><span class="bold">The element:</span> The opening tag plus the closing tag plus the content equals the element.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Atributes">
+            <header>Atributes</header>
+            <p>Attributes contain extra information about the element that you don't want to appear in the actual content. In this case, the <span class="bold">class</span> attribute allows you to give the element an identifying name, that can be used later to target the element with style information and other things</p>
+            <p>An attribute should have:</p>
+            <ul>
+                <li>A space between it and the element name (or the previous attribute, if the element already has one or more attributes).</li>
+                <li>The attribute name, followed by an equal sign.</li>
+                <li>An attribute value, with opening and closing quote marks wrapped around it.</li>
+            </ul>
+            <p>Another example of an element is <code>&lt;a&gt;</code> — this stands for "anchor" and will make the piece of text it wraps around into a hyperlink. This can take a number of attributes, but several are as follows:</p>
+            <ul>
+                <li>
+                    <span class="bold">href</span>: This attribute's value specifies the web address that you want the link to point to; where the browser navigates to when the link is clicked. For example, href="https://www.mozilla.org/"
+                </li>
+                <li>
+                    <span class="bold">title</span>: The title attribute specifies extra information about the link, such as what page is being linked to. For example, title="The Mozilla homepage". This will appear as a tooltip when the element is hovered over.
+                </li>
+                <li>
+                    <span class="bold">target</span>: The target attribute specifies the browsing context that will be used to display the link. For example, target="_blank" will display the link in a new tab. If you want to display the link in the current tab, just omit this attribute.
+                </li>
+            </ul>
+        </section>
+        <section class="main-section" id="anatomy_of_an_HTML_document">
+            <header>Anatomy of an HTML document</header>
+            <p>Here we have:</p>
+            <ol>
+                <li><code>&lt;!DOCTYPE html&gt;</code>: The doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things.</li>
+                <li><code>&lt;html&gt;&lt;&sol;html&gt;</code>: The <code>&lt;html&gt;</code> element. This element wraps all the content on the entire page, and is sometimes known as the root element</li>
+                <li>An attribute value, with opening and closing quote marks wrapped around it.</li>
+            </ol>
+        </section>
+        <section class="main-section" id="HTML_comments">
+            <header>HTML comments</header>
+            <p>In HTML, as with most programming languages, there is a mechanism available to write comments in the code — comments are ignored by the browser and are invisible to the user, and their purpose is to allow you to include comments in the code to say how your code works, what the different parts of the code do, and so on. This can be very useful if you return to a code base that you've not worked on for a long time, and can't remember what you did — or if you hand your code over for someone else to work on.</p>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
